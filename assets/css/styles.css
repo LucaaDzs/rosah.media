@@ -404,31 +404,30 @@ img {
   width: 0%;
   transition: 0.8s ease-out;
 }
-  .auto:hover .skills__automotiva {
-    width: 85%;
-
-  }
+.auto.active-bar .skills__automotiva {
+  width: 85%;
+}
   .skills__natureza {
   width: 0%;
   transition: 0.8s ease-out;
 }
-  .nat:hover .skills__natureza {
-    width: 60%;
-  }
+.nat.active-bar .skills__natureza {
+  width: 60%;
+}
   .skills__sport {
   width: 0%;
   transition: 0.8s ease-out;
 }
-  .sport:hover .skills__sport {
-    width: 40%;
-  }
+.sport.active-bar .skills__sport {
+  width: 40%;
+}
   .skills__edicao {
   width: 0%;
   transition: 0.8s ease-out;
 }
-  .img:hover .skills__edicao {
-    width: 75%;
-  }
+.img.active-bar .skills__edicao {
+  width: 75%;
+}
   .skills__design {
   width: 0%;
   transition: 0.8s ease-out;
@@ -680,4 +679,70 @@ img {
   .home__img {
     width: 450px;
   }
+}
+
+
+
+/* Ajusta posição da porcentagem e seta */
+.skills__percentage-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: var(--first-color);
+  margin-right: 1rem;
+}
+
+/* Seta rotaciona */
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--first-color);
+  transition: transform 0.3s ease;
+}
+
+/* Expansão */
+.skill-content {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  transition: max-height 0.4s ease;
+}
+
+
+.skill-content img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Estado aberto */
+.skill.open .skill-content {
+  max-height: 500px;
+}
+
+.skill.open .toggle-btn {
+  transform: rotate(180deg);
+}
+
+.skill-content-design {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  transition: max-height 0.4s ease;
+}
+
+.skill-content-design img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Estado aberto */
+.skill.open .skill-content-design {
+  max-height: 900px;
 }
