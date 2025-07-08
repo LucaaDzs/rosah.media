@@ -8,7 +8,7 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
-  --first-color: rgb(55, 0, 156); 
+  --first-color: #37009c; 
   --second-color: rgb(43, 43, 43);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
@@ -564,15 +564,14 @@ img {
     width: 100%;
   }
 
-  .about__text {
-    width: 90%;
-  }
+
 }
 
 @media screen and (min-width: 576px) {
   .home {
     padding: 4rem 0 2rem;
   }
+
   .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
